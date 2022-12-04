@@ -1,29 +1,81 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
+import Form from './Form.js';
 
 function App() {
 
-  axios({
-    url: "https://exercisedb.p.rapidapi.com/exercises",
-    method: "GET",
-    dataResponse: "json",
-    headers: {
-      'X-RapidAPI-Key': 'ef6fd39132msh8abe055cc29f896p12b893jsn8330c4edbff2',
-      // 'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-    },
-  })
+  const [bodyParts, setBodyParts] = useState([]);
 
-  .then( (response) => {
-   console.log(response.data);
-    
-  })
+  // Call useEffect: (use a CBF, add dependancy array so it runs once)
+  useEffect(() => {
+
+    //  invoke axios: 
+      axios({
+          url: "https://exercisedb.p.rapidapi.com/exercises",
+          method: "GET",
+          dataResponse: "json",
+          headers: {
+            'X-RapidAPI-Key': 'ef6fd39132msh8abe055cc29f896p12b893jsn8330c4edbff2',
+            // 'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+          },
+      })
+          
+         
+        .then( (response) => {
+        //  console.log(response.data);
+
+        // returns a large array so invoke slice to target the first 30 objects.
+         const first30 = response.data.slice(0,30)
+        //  console.log(first30);
+
+        const arrayOfBodyParts = first30.map((bodyObj) => {
+
+          
+        })
 
 
+        
+          
+        });
 
+  }, []);
+
+ 
   return (
     <div className="App">
       <h1>project 3</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* {
+        bodyParts.map( ( target ) => {
+          return(
+
+            <Form 
+            nameOfBodyPart = {target.target}
+            // gif = {target.gifUrl}
+            // name ={ target.name}
+            
+            />
+
+          )
+
+        })
+      } */}
+
+
     </div>
   );
 }
