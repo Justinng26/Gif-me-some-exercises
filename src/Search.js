@@ -1,8 +1,5 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-// import {Box, Button, TextField, Typography} from '@mui/icons-material';
-
-
 import { exerciseOptions, fetchData } from './fetchRequest.js';
 
 
@@ -18,9 +15,9 @@ const Search = ({setExercises}) => {
         //  console.log(exercisesData);
 
         const findExercises = exercisesData.filter((item) => 
-           item.name.toLowerCase().includes(search)
-        || item.target.toLowerCase().includes(search)
-        || item.equipment.toLowerCase().includes(search)
+        //    item.name.toLowerCase().includes(search)
+           item.target.toLowerCase().includes(search)
+        // || item.equipment.toLowerCase().includes(search)
         || item.bodyPart.toLowerCase().includes(search)
         );
 
@@ -31,24 +28,22 @@ const Search = ({setExercises}) => {
     }
  }
 
+  // Search bar
+     
   return (
     <div>
         <h2>Exercises:</h2>
         <form>
-
              <input
                 value={search}
-                onChange = {(e) => setSearch(e.target.value.toLowerCase())}
+                onChange = {(event) => setSearch(event.target.value.toLowerCase())}
                 placeholder = "Search Exercises"
                 type= "text"
              />
         </form>
-       
-
         <button onClick= {handleSearch}>
             Search:
         </button>
-
     </div>
   )
 }

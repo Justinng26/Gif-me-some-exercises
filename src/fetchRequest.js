@@ -8,7 +8,8 @@ export const exerciseOptions = {
   };
 
 
-
+// invoke axios
+  // Make the fetch request a component that I can pass as a prop when the user makes an input.
 export const fetchData = async ( url, options) => {
     const response = await fetch ( url, options);
     const data = await response.json();

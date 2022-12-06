@@ -8,7 +8,7 @@ import Results from './Results.js';
 
 function App() {
 
-  const [bodyParts, setBodyParts] = useState([]);
+  // const [bodyParts, setBodyParts] = useState([]);
 
   const [exercises, setExercises] = useState([]);
 
@@ -45,15 +45,15 @@ function App() {
     <div className="App">
       <h1>project 3</h1>
       
-      <Search 
-        setExercises={setExercises}
-      />
+          <Search 
+            setExercises={setExercises}
+          />
 
-      <Results
-        exercises={exercises}
-        setExercises={setExercises}
+          <Results
+            exercises={exercises}
+            setExercises={setExercises}
 
-      />
+          />
         
 
          {/* <Form */}
