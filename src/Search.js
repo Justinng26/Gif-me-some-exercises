@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useEffect, useState } from 'react';
 import { exerciseOptions, fetchData } from './fetchRequest.js';
 
@@ -9,7 +9,6 @@ const Search = ({setExercises}) => {
 
 
  const handleSearch = async () => {
-
 
     if(search) {
 

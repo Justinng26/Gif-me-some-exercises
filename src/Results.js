@@ -1,10 +1,9 @@
-import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { exerciseOptions, fetchData } from './fetchRequest';
 import Example from './Example.js';
 
 const Results = ({exercises, setExercises })=> {
-    // console.log(exercises);
+    
   return (
     <div>
         <h2>Results:</h2>

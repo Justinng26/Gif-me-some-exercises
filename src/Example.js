@@ -1,5 +1,4 @@
 
-
 const Example = ({exercise}) => {
   return (
     <div>
