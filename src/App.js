@@ -1,50 +1,16 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import axios from 'axios';
-// import Form from './Form.js';
 import Search from './Search.js';
 import { fetchData, exerciseOptions } from './fetchRequest.js';
 import Results from './Results.js';
 
 function App() {
 
-  // const [bodyParts, setBodyParts] = useState([]);
-
   const [exercises, setExercises] = useState([]);
 
-  // Call useEffect: (use a CBF, add dependancy array so it runs once)
-  useEffect(() => {
-
-    //  invoke axios: 
-      // axios({
-      //     url: "https://exercisedb.p.rapidapi.com/exercises/bodyPart/",
-      //     method: "GET",
-      //     dataResponse: "json",
-      //     headers: {
-      //       'X-RapidAPI-Key': 'ef6fd39132msh8abe055cc29f896p12b893jsn8330c4edbff2',
-      //       // 'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-      //     },
-          
-      // })
-          
-         
-      //   .then( (response) => {
-        //  console.log(response.data);
-
-        // returns a large array so invoke slice to target the first 30 objects.
-        //  const first50 = response.data.slice(0,50)
-        //    console.log(first50);
-        
-          
-  //       });
-
-  }, []);
-
- 
   return (
     <div className="App">
       <h1>project 3</h1>
-      
           <Search 
             setExercises={setExercises}
           />
@@ -54,34 +20,11 @@ function App() {
             setExercises={setExercises}
 
           />
-        
-
-         {/* <Form */}
-         
-         {/* chooseBodyPart
-         /> */}
     </div>
   );
 }
 
 export default App;
-
-   {/* {
-        bodyParts.map( ( target ) => {
-          return(
-
-            <Form 
-            nameOfBodyPart = {target.target}
-            // gif = {target.gifUrl}
-            // name ={ target.name}
-            
-            />
-
-          )
-
-        })
-      } */}
-
 
 // pseudo code
 // MVP

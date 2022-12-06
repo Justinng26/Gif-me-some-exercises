@@ -8,7 +8,6 @@ const Results = ({exercises, setExercises })=> {
   return (
     <div>
         <h2>Results:</h2>
-            <section>
                 <p>
                     {exercises.map((singleExercise, index)  =>   
                         <Example
@@ -17,7 +16,7 @@ const Results = ({exercises, setExercises })=> {
                         />
                      )}
                 </p>
-            </section>
+            
     </div>
   )
 }
