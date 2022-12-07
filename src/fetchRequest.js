@@ -1,5 +1,5 @@
 
- export const exerciseOptions = {
+ export const bodyPartOptions = {
   
     method: 'GET',
     // url: 'https://exercisedb.p.rapidapi.com/exercises',

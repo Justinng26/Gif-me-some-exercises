@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { exerciseOptions, fetchData } from './fetchRequest.js';
+import { bodyPartOptions, fetchData } from './fetchRequest.js';
 
 
 const Search = ({setExercises}) => {
@@ -11,7 +11,7 @@ const Search = ({setExercises}) => {
 
     if(search) {
 
-        const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+        const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', bodyPartOptions);
         const findExercises = exercisesData.filter((item) => 
            item.target.toLowerCase().includes(search)
         || item.bodyPart.toLowerCase().includes(search)
