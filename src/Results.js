@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { exerciseOptions, fetchData } from './fetchRequest';
+
+
 import Example from './Example.js';
 
 const Results = ({exercises, setExercises })=> {

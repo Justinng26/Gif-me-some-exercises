@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import { fetchData, exerciseOptions } from './fetchRequest.js';
+
 import Search from './Search.js';
 import Results from './Results.js';
 
