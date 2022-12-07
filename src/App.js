@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>project 3</h1>
+      <h1>Project 3: Gif me some exercises!</h1>
           <Search 
             setExercises={setExercises}
           />
