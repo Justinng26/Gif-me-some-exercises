@@ -1,12 +1,11 @@
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { exerciseOptions, fetchData } from './fetchRequest.js';
 
 
 const Search = ({setExercises}) => {
 
  const [search, setSearch] = useState('');
-
 
  const handleSearch = async () => {
 
