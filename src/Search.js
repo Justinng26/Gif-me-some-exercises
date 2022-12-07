@@ -12,13 +12,13 @@ const Search = ({setExercises}) => {
     if(search) {
 
         const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', bodyPartOptions);
-        const findExercises = exercisesData.filter((item) => 
+        const getExercises = exercisesData.filter((item) => 
            item.target.toLowerCase().includes(search)
         || item.bodyPart.toLowerCase().includes(search)
         );
 
         setSearch('');
-        setExercises(findExercises);
+        setExercises(getExercises);
     }
  }
 
@@ -32,7 +32,7 @@ const Search = ({setExercises}) => {
              <input
                 value={search}
                 onChange = {(event) => setSearch(event.target.value.toLowerCase())}
-                placeholder = "Search Exercises"
+                placeholder = "Search body part"
                 type= "text"
              />
         </form>
