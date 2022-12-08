@@ -12,7 +12,7 @@ const Example = ({exercise}) => {
                 </li>
             </ul>
             <h2>Body part: {exercise.bodyPart}</h2>
-            <h2>Target Muscle: {exercise.target}</h2>
+            <h3>Target Muscle: {exercise.target}</h3>
             <p>Name of Exercise: {exercise.name}</p>
         </section>
     </div>

@@ -15,9 +15,12 @@ const Search = ({setExercises}) => {
         const getExercises = exercisesData.filter((item) => 
            item.target.toLowerCase().includes(search)
         || item.bodyPart.toLowerCase().includes(search)
+        || item.equipment.toLowerCase().includes(search),
         );
 
+        // reset 'search' to an empty string
         setSearch('');
+
         setExercises(getExercises);
     }
  }

@@ -6,6 +6,7 @@ import Results from './Results.js';
 
 function App() {
 
+  // create a piece of state that will reference the user input.
   const [exercises, setExercises] = useState([]);
 
   return (
