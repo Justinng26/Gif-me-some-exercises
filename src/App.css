@@ -17,9 +17,21 @@
  h2{
   font-family:'Roboto Mono', monospace;  
   font-size: 2rem;
-  color: darkslategrey;
+  color: maroon;
  }
 
+ h3{
+  font-family:'Roboto Mono', monospace;
+  font-size: 1.5rem;
+  color: darkslategray;
+ }
+
+  p{
+      font-family:'Roboto Mono', monospace;
+      font-size:20px;
+      padding-bottom: 100px;
+    }
+    
  input{
   font-size: 20px;
   text-align: initial;
@@ -32,6 +44,10 @@
 
  button{ font-size: 20px;
     }
+
+ li{
+  list-style: none;
+ }
    
   
   
