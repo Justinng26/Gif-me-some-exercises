@@ -31,6 +31,7 @@ const Search = ({setExercises}) => {
   return (
     <div>
         <h2>What body part would you like to train today?</h2>
+        <h2>What equipment do you have available?</h2>
         <form>
              <input
                 value={search}
