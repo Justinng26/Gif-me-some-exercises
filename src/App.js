@@ -1,15 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-import axios from 'axios';
+import { useState } from 'react';
+
+import Search from './Search.js';
+import Results from './Results.js';
 
 function App() {
 
-  
-
+  // create a piece of state that will reference the user input.
+  const [exercises, setExercises] = useState([]);
 
   return (
     <div className="App">
-      <h1>project 3</h1>
+      <h1>Project 3: Gif me some exercises!</h1>
+          <Search 
+            setExercises={setExercises}
+          />
+
+          <Results
+            exercises={exercises}
+            setExercises={setExercises}
+          />
     </div>
   );
 }
@@ -17,9 +27,4 @@ function App() {
 export default App;
 
 
-// pseudo code
-// MVP
 
-// user selects a body part from the drop down menu.
-
-// what is returned is a list of example exercises they could do for each muscle group including an image.
