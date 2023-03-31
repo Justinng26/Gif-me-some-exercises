@@ -1,5 +1,5 @@
 
- export const bodyPartOptions = {
+ export const exerciseOptions = {
   
     method: 'GET',
     headers: {

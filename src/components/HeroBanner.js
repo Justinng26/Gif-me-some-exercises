@@ -30,7 +30,7 @@ const HeroBanner = () => {
 {/* Check out these exercises */}
         <Typography
             fontSize="22px"
-            LineHeight="35px"
+            lineHeight="35px"
             mb= {4}>
         Check out the most effective exercises
         </Typography>
@@ -57,7 +57,7 @@ const HeroBanner = () => {
         Explore Exercises
         </Button>
 
-{/* hero banner */}
+{/* hero banner img */}
         <img
           src= {HeroBannerImage}
           alt= "banner"
