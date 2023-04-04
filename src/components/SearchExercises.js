@@ -5,14 +5,14 @@ import HorizontalScrollbar from "./HorizontalScrollbar.js";
 
 const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
     const [search, setSearch] = useState('')
-    const [bodyPart, setBodyPart] = useState([]);
+    const [bodyParts, setBodyParts] = useState([]);
 
     // fetch the body part categories on page load (useEffect)
     useEffect(()  => {
         const fetchCategories = async () => {
             const categoriesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions)
            
-        setBodyPart(['all', ...categoriesData])
+        setBodyParts(['all', ...categoriesData])
         }
 
         fetchCategories();
@@ -31,7 +31,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
                 (exercise) => exercise.name.toLowerCase().includes(search) 
                 || exercise.target.toLowerCase().includes(search) 
                 || exercise.equipment.toLowerCase().includes(search) 
-                ||exercise.bodyPart.toLowerCase().includes(search) 
+                ||exercise.bodyPart.toLowerCase().includes(search),
             );
 
             // re-set 'search' to an empty string
