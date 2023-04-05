@@ -7,7 +7,8 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
     <Stack
         type="button"
         alignItems="center"
-        justifyContent="bodyPart-card"
+        justifyContent= "center"
+        className="bodyPart-card"
         sx={{
             borderTop: bodyPart === item? '4px solid #ff2625' : '',
             backgroundColor: '#fff',
