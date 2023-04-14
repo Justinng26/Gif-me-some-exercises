@@ -2,9 +2,6 @@ import React, { useContext } from 'react';
 import {  VisibilityContext, ScrollMenu } from 'react-horizontal-scrolling-menu';
 import { Box, Typography } from '@mui/material';
 
-
-
-
 import BodyPart from './BodyPart';
 import RightArrowIcon from '../assets/icons/right-arrow.png';
 import LeftArrowIcon from '../assets/icons/left-arrow.png';
@@ -32,7 +29,8 @@ const RightArrow = () => {
 };
 
 const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
-  <ScrollMenu 
+
+   <ScrollMenu 
   LeftArrow={LeftArrow} RightArrow={RightArrow}>
     {data.map((item) => (
         <Box
