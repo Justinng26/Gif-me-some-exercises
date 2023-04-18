@@ -15,7 +15,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
         width: '270px',
         height: '282px',
         cursor: 'pointer',
-        gap: '47px' }}
+        gap: '47px' 
+      }}
         onClick = {() => {
           setBodyPart(item);
           window.scrollTo({top:1800, left:100, behavior: 'smooth'})
