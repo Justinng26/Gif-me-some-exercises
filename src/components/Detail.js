@@ -27,7 +27,7 @@ const Detail = ({exerciseDetail}) => {
 
 {/* description */}
           <Typography>
-            Exercises keep you strong. {name} is one of the best exercises
+            Exercises keep you strong. {name} { ` `} is one of the best exercises to target your {target}. It will help you improve your mood and energy.
 
           </Typography>
        </Stack>     
