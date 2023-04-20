@@ -3,9 +3,9 @@ import {useParams} from 'react-router-dom';
 import { Box } from '@mui/material';
 
 import { exerciseOptions, fetchData } from '../utils/fetchRequest';
-import Detail from '../components/Detail.js'
-import ExerciseVideos from '../components/ExerciseVideos.js'
-import SimilarExercises from '../components/SimilarExercises.js'
+// import Detail from '../components/Detail'
+import ExerciseVideos from '../components/ExerciseVideos'
+import SimilarExercises from '../components/SimilarExercises'
 
 
 
@@ -23,6 +23,8 @@ const ExerciseDetail = () => {
       
       const exerciseDetailData = await fetchData(`${exerciseDbUrl}/exercises/exercise/${id}`, exerciseOptions)
       setExerciseDetail(exerciseDetailData)
+
+      console.log(exerciseDetailData);
     }
 
     
@@ -31,7 +33,7 @@ const ExerciseDetail = () => {
 
   return (
     <Box>
-      <Detail />
+      {/* <Detail /> */}
       <ExerciseVideos />
       <SimilarExercises />
     </Box>
