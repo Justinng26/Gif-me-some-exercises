@@ -118,6 +118,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .detail-image {
@@ -173,18 +174,21 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 387px;
+  width: 25%;
   height: 381px;
   text-decoration: none;
+  margin-bottom: -50px;
 }
 
 @media screen and (max-width:1366px) {
   .react-horizontal-scrolling-menu--scroll-container {
-    width: 750px;
+    width: 800px;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: hidden;
+    
+    
   }
 
   .left-arrow,
@@ -201,7 +205,7 @@ body {
   }
 
   .react-horizontal-scrolling-menu--scroll-container {
-    width:500px
+    width:600px
   }
 
 
