@@ -1,10 +1,10 @@
 # Fitness Club
 
-A React application that displays different exercices dependent on the user's search. User's can search for different exercises based on many different variables including bodypart, equipment or specific exercise choice. 
+ # A React application that displays different exercices dependent on the user's search. User's can search for different exercises based on many different variables including bodypart, equipment or specific exercise choice. 
 
-- The SearchExercises.js file in the components folder implements a search functionality for exercises. It uses Material-UI components for the user interface elements and fetches data from an API based on the user input. The 'useEffect' hook fetches initial data, and the 'handleSearch' function fetches filtered data based on the search query. The componenet also includes a horizontal scrollbar for selecting different body parts.
+# - The SearchExercises.js file in the components folder implements a search functionality for exercises. It uses Material-UI components for the user interface elements and fetches data from an API based on the user input. The 'useEffect' hook fetches initial data, and the 'handleSearch' function fetches filtered data based on the search query. The componenet also includes a horizontal scrollbar for selecting different body parts.
 
-- The Exercises.js file in the components folder displays a list of exercises and allows the user to navigate through the list using pagination. 
+# - The Exercises.js file in the components folder displays a list of exercises and allows the user to navigate through the list using pagination. 
 
 # Getting Started with Create React App
 
