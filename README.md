@@ -1,4 +1,4 @@
-# Fitness Club
+# Gif me some Exercises!
 
  # A React application that displays different exercices dependent on the user's search. User's can search for different exercises based on many different variables including bodypart, equipment or specific exercise choice. 
 
