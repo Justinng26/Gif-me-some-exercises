@@ -21,7 +21,9 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         flexWrap="wrap"
         alignItems="center"
         sx={{
-          flexDirection: { lg:'row', xs:'column'},
+          flexDirection: { lg:'row',
+          md: 'row',
+          xs:'column'},
           gap: { lg: '110px', xs:'0'}
         }}>
 
