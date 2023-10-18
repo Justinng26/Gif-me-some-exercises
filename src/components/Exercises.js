@@ -44,7 +44,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
         p= "20px">
 
 {/* Showing results */}
-         <Typography variant="h3" mb="46px">
+         <Typography variant="h3" mb="70px" ml="60px">
           Showing results
          </Typography>
 
