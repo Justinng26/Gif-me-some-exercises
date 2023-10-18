@@ -178,7 +178,7 @@ body {
   width: 25%;
   height: 381px;
   text-decoration: none;
-  margin-bottom: -50px;
+  margin-top: -40px;
 }
 
 @media screen and (max-width:1366px) {
@@ -221,8 +221,9 @@ body {
   }
 
   .exercise-video {
-    width: 320px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
   }
 
 }
