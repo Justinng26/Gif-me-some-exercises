@@ -5,7 +5,7 @@ const HeroBanner = () => {
   return (
    <Box sx={{
           mt: { lg: '212px', xs: '70px'},
-          ml: { sm: '70px', xs: '60px'}
+          ml: { sm: '70px', xs: '50px'}
    }} position="relative" p="20px">
 
 {/* Fitness Club */}

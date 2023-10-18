@@ -27,7 +27,8 @@ const Detail = ({exerciseDetail}) => {
       gap="60px"
       sx= {{ flexDirection:{lg: 'row'},
              p: '20px',
-             alignItems: 'center'
+             alignItems: 'center',
+             m: '0 55px'
              }}>
 
       <img src={gifUrl}
