@@ -39,12 +39,12 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
   return (
     <Box id="exercises"
       sx={{
-        mt: {lg: '110px'}}}
+        mt: {lg: '60px'}}}
         mt= "50px"
         p= "20px">
 
 {/* Showing results */}
-         <Typography variant="h3" mb="70px" ml="70px">
+         <Typography variant="h3" mb="90px" ml="70px">
           Showing results
          </Typography>
 
