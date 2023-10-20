@@ -201,7 +201,7 @@ body {
 
 @media screen and (max-width:1200px) {
   .detail-image {
-    width: 350px;
+    width: 450px;
     height: 350px;
     margin-top: 30px;
     margin-left: 60px;
@@ -224,20 +224,33 @@ body {
     width: 350px;
     height: 350px;
     margin-top: 30px;
-    margin: 20px 40px
+    margin: 20px 40px;
   }
 
 }
 
 @media screen and (max-width:900px) {
-  .exercise-video {
-    width: 300px;
-    height: 300px;
-    margin-top: 30px;
-    margin: 40px 40px
+  .react-horizontal-scrolling-menu--scroll-container {
+    width:500px
   }
   
 }
+
+@media screen and (max-width:650px) {
+  .react-horizontal-scrolling-menu--scroll-container {
+    width:400px
+  }
+
+  .detail-image {
+    width: 350px;
+    height: 350px;
+    margin-top: 30px;
+    margin: 30px;
+  }
+  
+}
+  
+
 
 @media screen and (max-width:400px) {
   .exercise-card {

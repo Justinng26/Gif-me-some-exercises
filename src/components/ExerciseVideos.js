@@ -9,7 +9,12 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
   return (
     <Box sx={{ marginTop: { lg:'90px', xs:'20px'}}} p="20px">
 
-      <Typography variant="h3" mb="90px" sx={{ ml: '60px'}}>
+      <Typography 
+        variant="h3" 
+        mb={{ lg:"90px", md:"50px", sm:"40px", xs:"20px"}} 
+        sx={{ ml: '60px'}}
+        // fontSize={{ xs:'2.5rem'}}
+      >
         Watch&nbsp; 
          <span style={{color: '#ff2625',textTransform: 'capitalize'}}>
                 {name}  
