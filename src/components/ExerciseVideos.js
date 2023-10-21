@@ -13,7 +13,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         variant="h3" 
         mb={{ lg:"90px", md:"50px", sm:"40px", xs:"20px"}} 
         sx={{ ml: '60px'}}
-        // fontSize={{ xs:'2.5rem'}}
+        fontSize={{ xs: '2rem', sm: '2.5rem', md:'3rem', lg: '3.5rem',}}
       >
         Watch&nbsp; 
          <span style={{color: '#ff2625',textTransform: 'capitalize'}}>

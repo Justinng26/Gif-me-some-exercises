@@ -39,7 +39,9 @@ const Detail = ({exerciseDetail}) => {
 
        <Stack sx={{gap: {lg: '35px', xs: '20px'},
                    mt: '-20px'}}>
-          <Typography variant="h3">
+          <Typography variant="h3"
+                      fontSize={{ xs: '2rem', sm: '2.5rem', md:'3rem', lg: '3.5rem',}}
+          >
             {name}
           </Typography>
 {/* description */}
